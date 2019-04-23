@@ -1,0 +1,12 @@
+[submodule "openabe"]
+	path = openabe
+	url = https://github.com/zeutro/openabe.git
+[submodule "graphene"]
+	path = graphene
+	url = https://github.com/oscarlab/graphene.git
+[submodule "linux-sgx"]
+	path = linux-sgx
+	url = https://github.com/intel/linux-sgx.git
+[submodule "linux-sgx-driver"]
+	path = linux-sgx-driver
+	url = https://github.com/intel/linux-sgx-driver.git
