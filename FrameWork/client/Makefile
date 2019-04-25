@@ -19,7 +19,7 @@ JSON_CFLAGS = -O2 -std=c++11 -fno-rtti -fno-exceptions
 all: client decrypt
 
 clean:
-		rm -rf client decrypt *.o *~ *.data *.cpabe *.pem
+		rm -rf client decrypt *.o *~ *.data *.cpabe *.pem *.key
 
 decrypt: common.o decrypt.o
 		$(CXX) -o $@ $^ $(ABE_INCLUDE) $(OPENABE_LIB) $(ABE_LDFLAGS)
