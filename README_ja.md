@@ -27,7 +27,7 @@ git submodule update --init --recursive
 + 提案システムで使用するライブラリ（OpenABE，graphene）をビルドする．
 
 ## OpenABE
-インストール詳細等は[こちら](https://github.com/zeutro/openabe)を参照されたい．
+インストール詳細等は[こちら](https://github.com/zeutro/openabe/tree/c0c7a2a0e2e1fb802e69cb32361f25120a46d48d)を参照されたい．
 ここでは簡易方法について解説する．
 
 ```
@@ -53,7 +53,7 @@ cd examples
 
 
 ## graphene
-インストール詳細等は[こちら](https://github.com/zeutro/openabe)を参照されたい．
+インストール詳細等は[こちら](https://github.com/oscarlab/graphene/tree/f30f7e7575befce6375783fa424a9ac6c8faa605)を参照されたい．
 ここでは簡易方法について解説する．
 
 ```
@@ -221,12 +221,41 @@ An optional company name []:
 ```
 
 
+# Quick Start
+## Setup, Keygen
+```
+cd [PATH]/graphene_ABE/Framework
+make
+```
 
+## Upload
+```
+@server
+cd [PATH]/graphene_ABE/Framework/server
+./getData
 
+@DataOwner
+cd [PATH]/graphene_ABE/Framework/DataOwner
+make upload
+```
 
+## Compile
+```
+cd [PATH]/graphene_ABE/Framework/server
+make compile
+```
 
+## Analyze
+```
+@server
+cd [PATH]/graphene_ABE/Framework/server
+make SGXserver
 
-
+@client
+cd [PATH]/graphene_ABE/Framework/client
+make analyze
+make check
+```
 
 
 # Copyright(要確認)
